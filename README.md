@@ -1,78 +1,90 @@
-# Aluminum Fabric Mod
+# Aluminum
 
-一个专注于通过优化手段减少游戏卡顿和降低CPU/GPU占用率的Minecraft Fabric客户端模组。
+A Minecraft Fabric client mod focused on reducing game lag and lowering CPU/GPU usage through optimization.
 
-## 主要功能
+This project made with AI because I DON'T KNOW HOW TO USE FABRIC but my [friend](https://modrinth.com/user/tiebai) need this.
 
-- **实体渲染优化**：减少不必要的实体渲染和更新
-- **粒子效果优化**：限制粒子效果数量以减轻GPU负担
-- **资源加载优化**：优化资源加载机制减少内存占用
-- **动态性能调整**：根据系统性能动态调整优化级别
+别骂了，这个作品确实是AI做的，首先我不会Fabric，其次我的[朋友](https://modrinth.com/user/tiebai)非要这个，话说他咋不自己让AI去写呢...
 
-## 优化原理
+## Main Features
 
-### 实体优化
-1. 实体距离剔除：只渲染和处理玩家附近一定距离内的实体
-2. 实体数量限制：限制同时渲染的实体数量
-3. 实体更新频率控制：降低远距离实体的更新频率
-4. 非关键实体跳帧：跳过非关键实体的一些渲染帧
+- **Entity Rendering Optimization**: Reduce unnecessary entity rendering and updates
+- **Particle Effect Optimization**: Limit the number of particle effects to reduce GPU load
+- **Resource Loading Optimization**: Optimize resource loading mechanisms to reduce memory usage
+- **Dynamic Performance Adjustment**: Dynamically adjust optimization levels based on system performance
 
-### 粒子效果优化
-1. 粒子数量限制：限制同时渲染的粒子数量
-2. 距离剔除：只渲染玩家附近一定距离内的粒子
-3. 粒子类型优先级：优先显示重要粒子效果
-4. 粒子生命周期管理：提前清理不必要的粒子
+## Optimization Principles
 
-### 渲染优化
-1. 动态视距调整：根据性能状况动态调整渲染距离
-2. 图像质量降级：在性能不足时自动降低图像质量
-3. 渲染管线优化：优化渲染管线中的关键步骤
-4. 内存和GPU资源管理：及时释放不用的渲染资源
+### Entity Optimization
+1. Entity Distance Culling: Only render and process entities within a certain distance of the player
+2. Entity Count Limit: Limit the number of entities rendered at the same time
+3. Entity Update Frequency Control: Reduce the update frequency of distant entities
+4. Skip Frames for Non-Critical Entities: Skip some rendering frames for non-critical entities
 
-## 性能监控
+### Particle Effect Optimization
+1. Particle Count Limit: Limit the number of particles rendered at the same time
+2. Distance Culling: Only render particles within a certain distance of the player
+3. Particle Type Priority: Prioritize displaying important particle effects
+4. Particle Lifetime Management: Clean up unnecessary particles in advance
 
-模组包含性能监控系统，可以实时监控：
-- FPS（每秒帧数）
-- 内存使用情况
-- 实体数量
-- 粒子数量
+### Rendering Optimization
+1. Dynamic View Distance Adjustment: Adjust rendering distance dynamically based on performance
+2. Image Quality Reduction: Automatically lower image quality when performance is insufficient
+3. Rendering Pipeline Optimization: Optimize key steps in the rendering pipeline
+4. Memory and GPU Resource Management: Release unused rendering resources in a timely manner
 
-## 配置文件
+## Performance Monitoring
 
-配置文件位于 `config/aluminum.json`，包含以下选项：
+The mod includes a performance monitoring system that can track in real-time:
+- FPS (Frames Per Second)
+- Memory usage
+- Number of entities
+- Number of particles
 
-- 优化级别（低/中/高/极致）
-- 最大实体渲染距离
-- 实体剔除开关
-- 最大实体渲染数量
-- 最大粒子数量
-- 粒子优化开关
-- 粒子渲染距离倍率
-- 渲染优化开关
-- 高级图形开关
-- 最大区块渲染距离
-- 动态优化开关
-- 目标FPS
+## Configuration File
 
-## 兼容性
+The configuration file is located at `config/anti-lag.json` and includes the following options:
 
-- Minecraft版本：1.21至1.21.10
-- Fabric Loader版本：0.17.3+
-- Java版本：21+
+- Optimization level (Low/Medium/High/Extreme)
+- Maximum entity render distance
+- Entity culling toggle
+- Maximum number of entities rendered
+- Maximum number of particles
+- Particle optimization toggle
+- Particle render distance multiplier
+- Rendering optimization toggle
+- Advanced graphics toggle
+- Maximum chunk render distance
+- Dynamic optimization toggle
+- Target FPS
 
-## 安装
+## Compatibility
 
-1. 将 `aluminum-1.0.0.jar` 文件放入 `.minecraft/mods` 目录
-2. 启动游戏
+- Minecraft Version: 1.21 to 1.21.10
+- Fabric Loader Version: 0.17.3
+- Java Version: 21
 
-## 使用说明
+## Installation
 
-模组启动后会自动应用优化设置。如果需要自定义设置，可以编辑 `config/aluminum.json` 文件。
+1. Place the `anti-lag-1.0.0.jar` file into the `.minecraft/mods` directory
+2. Launch the game
 
-## 作者
+## Usage
+
+The mod will automatically apply optimization settings upon launch. If you want to customize settings, you can edit the `config/anti-lag.json` file.
+
+## Author
 
 li2012China
 
-## 许可证
+## License
 
-CC-BY-NC-ND-4.0
+CC-BY-NC-ND 4.0
+
+## Changelog
+
+### v1.0.0
+- Initial release
+- Implement basic optimization features
+- Add performance monitoring
+- Add configuration file support
