@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.aluminum.li2012china.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"SimpleMixin"
+	],
+	"client": [
+		"EntityRendererMixin",
+		"MinecraftClientMixin",
+		"ParticleManagerMixin",
+		"WorldRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

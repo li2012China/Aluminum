@@ -1,0 +1,10 @@
+{
+	"modmenu.descriptionTranslation.aluminum": "一个专注于通过优化技术减少游戏卡顿和CPU/GPU使用率的Minecraft Fabric客户端模组。",
+	"category.aluminum.general": "Aluminum - 通用设置",
+	"key.aluminum.toggle": "切换Aluminum",
+	"option.aluminum.optimizationLevel": "优化级别",
+	"option.aluminum.optimizationLevel.low": "低",
+	"option.aluminum.optimizationLevel.medium": "中",
+	"option.aluminum.optimizationLevel.high": "高",
+	"option.aluminum.optimizationLevel.extreme": "极高"
+}

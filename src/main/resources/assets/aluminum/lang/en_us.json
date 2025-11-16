@@ -1,0 +1,10 @@
+{
+	"modmenu.descriptionTranslation.aluminum": "A Minecraft Fabric client mod focused on reducing game lag and CPU/GPU usage through optimization techniques.",
+	"category.aluminum.general": "Aluminum - General Settings",
+	"key.aluminum.toggle": "Toggle Aluminum",
+	"option.aluminum.optimizationLevel": "Optimization Level",
+	"option.aluminum.optimizationLevel.low": "Low",
+	"option.aluminum.optimizationLevel.medium": "Medium",
+	"option.aluminum.optimizationLevel.high": "High",
+	"option.aluminum.optimizationLevel.extreme": "Extreme"
+}
